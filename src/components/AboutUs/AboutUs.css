@@ -1,5 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@500&family=Proza+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital,wght@0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital,wght@0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital,wght@0,100;0,700;1,400;1,600;1,700&display=swap');
 .AboutUs{
-    background-color: rgb(0, 0, 0);
+    background-color: #272934 ;
     height: 800px;
     margin-top: 10px;
+}
+.discount{
+    height: 32px;
+    width: 32px;
+}
+.descripcion{
+    font-family: 'Poppins', sans-serif !important;
+    font-style: italic;
+    font-weight:100;
+    color: white !important;
+    max-width: 470px;
+}
+#home{
+    max-width: 1300px !important;
+}
+#disclaimer{
+    margin-top: 20px !important;
+}
+.discord{
+    text-decoration: underline;
+    color: #4feaaac2 !important;
+}
+.cartelInDev{
+    background: rgb(46, 43, 43);
+    background: linear-gradient(90deg,rgba(46,43,43,1) 0%, rgba(26,24,27,0,8)49%);
+    border-radius: 5px;
+    width: 220px;
+    height: 40px;
+    display: flex;
+    font-size: small;
+    color: white;
+    justify-content: center;
+    gap: 10px;
 }

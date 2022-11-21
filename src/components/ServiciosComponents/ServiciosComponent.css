@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@500&family=Proza+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital,wght@0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital,wght@0,700;1,400;1,600;1,700&display=swap');
 *{
     -ms-overflow-style: none;
 }
@@ -25,14 +28,15 @@
     height: auto;
 }
 .ServiciosTitulo{
-    font-family: 'Expletus Sans', cursive;
-    font-family: 'Proza Libre', sans-serif;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: bold;
+    color: white !important;
 }
 .backg{
     overflow: hidden;
     overflow-y: auto;
     height: 600px;
-    background-color: black !important;
+    background-color: 272934  !important;
     background-repeat: no-repeat;
 }
 .CartasGrupo{
@@ -44,6 +48,18 @@
     margin-right: 15%;
     align-items: center;
     justify-content: center;
+}
+.serviciotitle{
+    font-family: 'Poppins', sans-serif !important;
+    font-style: italic;
+    font-weight: bold;
+    color: white !important;
+}
+.serviciodesc{
+    font-family: 'Poppins', sans-serif !important;
+    font-style: italic;
+    font-weight:400;
+    color: white !important;
 }
 #ServiciosPage{
     background-color: black !important;
@@ -59,4 +75,7 @@
 }
 .servicefour{
     width: 30px;
+}
+.wrapper{
+    height: 600px;
 }

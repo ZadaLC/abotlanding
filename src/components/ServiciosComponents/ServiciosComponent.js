@@ -3,10 +3,13 @@ import React from "react";
 import {Row, Col, Card, CardGroup} from 'react-bootstrap';
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import styled from "styled-components";
+import "@fontsource/poppins";
 //Styles
 import './ServiciosComponent.css'
 //Components
 //Assets Imports
+import { stats } from "../stats";
+import styles from "../../style";
 import serviceone from '../../assets/serviceone.png'
 import servicetwo from '../../assets/servicetwo.png'
 import servicethree from '../../assets/servicethree.png'
@@ -36,33 +39,29 @@ function ServiciosComponent (){
 }
 
 const rows = [
-    createData(1, 'Servicio','Descripcion De Servicio...', serviceone),
-    createData(2, 'Servicio','Descripcion De Servicio...', servicetwo),
-    createData(3, 'Servicio','Descripcion De Servicio...', servicethree),
-    createData(4, 'Servicio','Descripcion De Servicio...', servicefour),
-    createData(5, 'Servicio','Descripcion De Servicio...', serviceone),
-    createData(6, 'Servicio','Descripcion De Servicio...', servicetwo),
-    createData(7, 'Servicio','Descripcion De Servicio...', servicethree),
-    createData(8, 'Servicio','Descripcion De Servicio...', servicefour)
+    createData(1, '/dolarg','Precio Dolar Oficial & Blue a tiempo real.', serviceone),
+    createData(2, '/steamarg','Buscador de juegos de Steam Argentina', servicetwo),
+    createData(3, '/steamtax','Aplica Impuestos de Steam a valor ingresado ', servicethree),
+    createData(4, '/help','Lista de comandos activos', servicefour),
+    createData(5, '/avatar','Muestra avatar del usuario elegido', serviceone)
 ];
 
-const PoppedModal = () => {
-  
-}
+
 
 
     return(<>
+    
     <div className="ServiciosPage">
     <h1 className="ServiciosTitulo" style={{
       textAlign: 'center'
-    }}>Servicios</h1>
-    <div className="backg" style={{ 
-      backgroundImage:`url(${kv})`
-    }}>
+    }}>Comandos A-Bot</h1>
+    <div className="wrapper">
+    <div className="backg" >
     <CardWrapper>
     <CardGroup className="CartasGrupo" scrollable={true}>
+      
         {rows.map((row, index) =>(
-          <Row xs={1} md={2} className="g-4" className="rows">
+          <Row xs={1} md={2} className="g-4" >
           <Col className="ServiceCol">
           <motion.div
           
@@ -74,16 +73,17 @@ const PoppedModal = () => {
             dragConstraints={{top: 0, left: 0, right: 0, bottom: 0}}
             whileTap={{cursor: 'grabbing'}}
           >
-            <Card className="card text-center bg-white animate__animated animate__fadeInUp" id="ServicioCard" >
-            <Card.Header className="CardHeader"> <img  src={row.Imagen}  className="serviceone"/></Card.Header>
             
-              <Card.Body >
-                <Card.Title>{row.Servicio}</Card.Title>
-                <Card.Text>
-                {row.Descripcion}</Card.Text>
-              </Card.Body>
+            
+            <div key={rows.id}  >
+            <h4 className="serviciotitle">
+                {row.Servicio}
+            </h4>
+            <p className="serviciodesc text-gradient uppercase ml-3">
+                {row.Descripcion}
+            </p>
+            </div>
               
-            </Card>
             </motion.div>
             
           </Col>
@@ -91,12 +91,14 @@ const PoppedModal = () => {
           </Row>
         ))}
         
+        
         </CardGroup>
         </CardWrapper>
         <div/>
         </div>
-        
+        </div>
         </div>  
+        
 </>
     
     )

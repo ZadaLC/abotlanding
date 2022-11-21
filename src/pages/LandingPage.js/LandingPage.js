@@ -2,6 +2,7 @@
 //Libraries
 import React from 'react'
 import Aos from 'aos'
+import styles from '../../style';
 import { useEffect, useRef, useState} from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAlignLeft } from "@fortawesome/free-solid-svg-icons";
@@ -57,30 +58,30 @@ const LandingPage = () => {
 
     return (
         <>
-
+        <div className=" w-full overflow-hidden">
         <div className='landingbody'>
 
                 <NavBar/>
                 
             
-            <div data-aos="fade-down"  >
+            <div data-aos="fade-down" className={`${styles.flexStart}`} >
                 <AboutUs/>
             </div>
             <div data-aos="fade-down" className='ServiciosComponent'>
                 <ServiciosComponent/>
             </div>
             
-            {isVisible &&(
+            {/* {isVisible &&(
                 <Fab
                 id="fabid"
-                mainButtonStyles={{ backgroundColor: '#D46BEE'}}
+                mainButtonStyles={{ backgroundColor: '#4FEAA9'}}
                 icon={<i class="material-icons">menu</i>}
                 >
     
                 <Action
                 onClick={scrollToBottom}
                 text="Contacto"
-                style={{"backgroundColor": "#9745AB"}}
+                style={{"backgroundColor": "#4FEAA9"}}
                 >
     
                 <i class="material-icons">arrow_drop_down</i>
@@ -89,14 +90,15 @@ const LandingPage = () => {
                 <Action
                 onClick={scrollToTop}
                 text="Inicio"
-                style={{"backgroundColor": "#9745AB"}}
+                style={{"backgroundColor": "#4FEAA9"}}
                 >
     
                 <i class="material-icons">arrow_drop_up</i>
                 </Action>
                 </Fab>
-            )}
+            )} */}
 
+        </div>
         </div>
         </>
     )

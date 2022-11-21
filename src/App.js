@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import RouterConfig from "./routes/RouterConfig";
 //Styles
 import "./App.css";
-
+import styles from "./index.css"
 
 const App = () => {
   return (
