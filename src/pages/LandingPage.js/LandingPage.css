@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@500&display=swap');
+
+#navbarid{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10px;
+    
+}
+.logonavbar{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+.kiuviname{
+    margin-top: 10px;
+    font-family: 'Expletus Sans', cursive;
+}
+.BotonContacto{
+border-color: #8C30F5;
+color: white;
+background-color: #8C30F5;
+margin-left: 10px;
+margin-right: 10px;
+}
+
+#responsive-navbar-nav{
+    background-color: white;
+}
+#botonlogo{
+    border-color: transparent;
+}
+.margenleftmenu{
+    margin-left: 10px;
+}
+
+.landingbody{
+    
+    height: 100%;
+}
+#fabid{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
