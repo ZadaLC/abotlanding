@@ -49,6 +49,70 @@
     align-items: center;
     justify-content: center;
 }
+.animationCommand{
+    overflow: hidden;
+    margin-bottom: 10px !important;
+    margin-top: 5%;
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+    align-items: center;
+    justify-content: center;
+}
+#imagecommand{
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (max-width: 900px) {
+    
+    .imagecommandwrapper{
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #imagecommand{
+        width: 50% !important;
+        height: 50% !important;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .hideanimation{
+        display: none !important;
+    }
+    .imagecommandwrapper{
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #imagecommand{
+        width: 80% !important;
+        height: 80% !important;
+    }
+    .serviciotitle{
+        font-family: 'Poppins', sans-serif !important;
+        font-style: italic;
+        font-weight: bold;
+        color: white !important;
+        font-size: smaller;
+        margin-left: 4px;
+    }
+    .serviciodesc{
+        font-family: 'Poppins', sans-serif !important;
+        font-style: italic;
+        font-weight:400;
+        color: white !important;
+        font-size: small;
+        margin-left: 4px;
+    }
+  }
+  .imagecommandwrapper{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .serviciotitle{
     font-family: 'Poppins', sans-serif !important;
     font-style: italic;
